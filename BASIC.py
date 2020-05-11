@@ -1,9 +1,10 @@
 from arcgis.gis import GIS
 from IPython.display import display
+from getpass import getpass
 
 ptl = input('enter portal name: ')
 unm = input('enter username: ')
-pwd = input('enter password: ')
+pwd = getpass('enter password: ')
 
 gis = GIS("https://" + ptl + ".maps.arcgis.com", username=unm, password=pwd)
 
