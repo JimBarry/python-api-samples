@@ -1,3 +1,5 @@
+#this is a script for building a deep learning model from a folder of labeled images
+#
 #see developers.arcgis.com for how to install arcgis.learn
 from arcgis.learn import RetinaNet, prepare_data
 
