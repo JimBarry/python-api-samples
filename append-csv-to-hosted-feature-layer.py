@@ -157,6 +157,22 @@ target_layer.append(item_id=new_csv_item_id,
 
 # In[ ]:
 
+# test9.csv
+# ID,GREEK,PHON,LONG,LAT,VAL,NOTES
+# 0,ALPHA,ALPHA,-74.1,40.4,0,First Letter
+# 1,BETA,BRAVO,-74.1,40.5,1,Second Letter
+# 2,GAMMA,CHARLIE,-74.1,40.6,2,Third Letter
+# 3,DELTA,DELTA,-74.2,40.4,3,Fourth Letter
+# 4,EPSILON,ECHO,-74.2,40.5,4,Fifth Letter
+# 5,ZETA,FOXTROT,-74.2,40.6,5,Sixth Letter
+# 6,ETA,GOLF,-74.3,40.4,6,Seventh Letter
+# 7,THETA,HOTEL,-74.3,40.5,7,Eighth Letter
+# 8,IOTA,INDIA,-74.3,40.6,8,Ninth Letter
 
+# add3.csv
+# ID,GREEK,PHON,LONG,LAT,VAL,NOTES
+# 9,KAPPA,KILO,-74.4,40.4,9,Tenth Letter
+# 10,LAMBDA,LIMA,-74.4,40.5,10,Eleventh Letter
+# 11,MU,MIKE,-74.4,40.6,11,Twelfth Letter
 
 
