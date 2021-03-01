@@ -6,6 +6,8 @@
 
 ## IMPORT A CSV FILE TO CREATE A NEW CSV ITEM IN ARCGIS ONLINE
 ## THEN PUBLISH THAT CSV ITEM AS A NEW HOSTED FEATURE LAYER
+##
+## CSV sample data at the bottom
 
 import os
 from arcgis.gis import GIS
@@ -107,5 +109,14 @@ map1.add_layer(new_feature_layer_item)
 # In[ ]:
 
 
-
-
+# test9.csv
+# ID,GREEK,PHON,LONG,LAT,VAL,NOTES
+# 0,ALPHA,ALPHA,-74.1,40.4,0,First Letter
+# 1,BETA,BRAVO,-74.1,40.5,1,Second Letter
+# 2,GAMMA,CHARLIE,-74.1,40.6,2,Third Letter
+# 3,DELTA,DELTA,-74.2,40.4,3,Fourth Letter
+# 4,EPSILON,ECHO,-74.2,40.5,4,Fifth Letter
+# 5,ZETA,FOXTROT,-74.2,40.6,5,Sixth Letter
+# 6,ETA,GOLF,-74.3,40.4,6,Seventh Letter
+# 7,THETA,HOTEL,-74.3,40.5,7,Eighth Letter
+# 8,IOTA,INDIA,-74.3,40.6,8,Ninth Letter
