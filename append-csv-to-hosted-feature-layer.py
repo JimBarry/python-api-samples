@@ -17,6 +17,8 @@
 ## Also this video:
 ## https://www.youtube.com/watch?v=B-6AoeYQnmk (zoom ahead to 21:48)
 ##
+##
+## CSV sample data at the bottom
 
 
 # In[ ]:
