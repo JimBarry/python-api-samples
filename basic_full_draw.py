@@ -31,7 +31,7 @@ for item in my_content:
 
 # display details of selected item
 idx = input('enter index of layer you want to draw, or [enter] for 0: ') or 0
-selected_item = my_content[idx]
+selected_item = my_content[int(idx)]
 display(selected_item)
 
 # ---------------------
