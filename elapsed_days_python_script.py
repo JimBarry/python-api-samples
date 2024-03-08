@@ -50,8 +50,8 @@ for i in range(num_features):
     today = date.today()
     
      # we're subtracting today's date with the date of the last inspection
-     # to return a DateDiff object, then reading the actual number of days
-     # from the DateDiff object's 'days' property
+     # to return a Python "timedelta" object, then reading the actual number 
+     # of day from the timedelta object's 'days' property
     days_since_last_inspection = (today - last_inspection_date).days
     
      # then we take the number of days that have elapsed between today and
