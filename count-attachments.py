@@ -8,7 +8,7 @@ print(gis)
 # -----
 
 hfl_item = gis.content.get(portalId_HostedFeatureService)
-hfl_layer = hfl_item.layers[0] 'just the first feature layer in the feature service
+hfl_layer = hfl_item.layers[0] #just the first feature layer in the feature service
 hfl_fset = hfl_layer.query()
 hfl_features = hfl_fset.features
 attachments = hfl_layer.attachments
@@ -29,7 +29,7 @@ for feat in hfl_features:
                  ', num attachments: ' + str(numAttachments)
     print(strToPrint)
 print('------------------------------------------')    
-strTally = 'Total feature records: ' + str(countFeatures) + \
+strTally = 'Total Feature Records: ' + str(countFeatures) + \
            ', Total Attachments: ' + str(countAttachments)
 print(strTally)
 
