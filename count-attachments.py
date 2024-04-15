@@ -15,22 +15,30 @@ hfl_attachments = hfl_layer.attachments
 print(hfl_item.url)
 
 # -----
+countRecords = len(hfl_features)
+print("Record count: " + str(countRecords))
 
-countFeatures = 0
-countAttachments = 0
-for feat in hfl_features:
-    countFeatures+=1
-    attribs = feat.attributes
-    oid = attribs.get('OBJECTID')
-    attach = hfl_attachments.get_list(oid)
-    numAttachments = len(attach)
-    countAttachments = countAttachments + numAttachments
-    strToPrint = 'record: ' + str(countFeatures) + ', OID: ' + str(oid) + \
-                 ', num attachments: ' + str(numAttachments)
-    print(strToPrint)
-print('------------------------------------------')    
-strTally = 'Total Feature Records: ' + str(countFeatures) + \
-           ', Total Attachments: ' + str(countAttachments)
-print(strTally)
+# -----
+countAttachments = hfl_attachments.count(where='1=1')
+print("Attachments count: " + str(countAttachments))
+
+# ----- below is no longer needed now that i've got the "count()" method working
+
+#countFeatures = 0
+#countAttachments = 0
+#for feat in hfl_features:
+#    countFeatures+=1
+#    attribs = feat.attributes
+#    oid = attribs.get('OBJECTID')
+#    attach = hfl_attachments.get_list(oid)
+#    numAttachments = len(attach)
+#    countAttachments = countAttachments + numAttachments
+#    strToPrint = 'record: ' + str(countFeatures) + ', OID: ' + str(oid) + \
+#                 ', num attachments: ' + str(numAttachments)
+#    print(strToPrint)
+#print('------------------------------------------')    
+#strTally = 'Total Feature Records: ' + str(countFeatures) + \
+#           ', Total Attachments: ' + str(countAttachments)
+#print(strTally)
 
 # -----
