@@ -1,12 +1,10 @@
 # -----
-
 from arcgis.gis import GIS
 portalId_HostedFeatureServiceItem = '904467ee2fbb45f1ac816dd5ff3768ed'
 gis = GIS('home')
 print(gis)
 
 # -----
-
 hfl_item = gis.content.get(portalId_HostedFeatureServiceItem)
 hfl_layer = hfl_item.layers[0] #just the first feature layer in the feature service
 hfl_featureset = hfl_layer.query()
